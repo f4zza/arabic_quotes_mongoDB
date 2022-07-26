@@ -11,7 +11,7 @@ let db,
 
     MongoClient.connect(dbConnectionStr, {useUnifiedTopology: true})
                 .then(client => {
-                    console.log(`Connected to ${dbName} database.`)
+                    console.log(`Connected to ${dbName} Database.`)
                     db = client.db(dbName)
                 })
 
@@ -39,12 +39,12 @@ app.post('/addQuote', (req,res)=> {
 })
 
 app.put('/addOneLike', (req,res)=> {
-    db.collection('quotes').updateOne({arQuote: req.body.arQuoteL, enQuote: req.body.enQuoteL, likes: body.likesL},{
+    db.collection('quotes').updateOne({arQuote: req.body.arQuoteL, enQuote: req.body.enQuoteL,likes: req.body.likesL},{
         $set: {
             likes:req.body.likesL + 1
         }
     },{
-        sort: {_id: 1},
+        sort: {_id: -1},
         upsert: true
     })
     .then(result => {

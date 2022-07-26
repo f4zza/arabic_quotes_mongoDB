@@ -1,0 +1,34 @@
+h1 {
+    color: #FB8987;
+    text-align: center;
+}
+
+.quotes{
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+}
+
+.quotes li{
+    padding: 10px;
+    border-bottom: 1px solid black;
+   
+    
+}
+
+form{
+    align-items: center;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    color: #5B7844;
+}
+
+@media screen and (width: 550px){
+    *{
+        width: fit-content;
+    }
+}

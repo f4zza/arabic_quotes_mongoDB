@@ -13,8 +13,18 @@ h1 {
 .quotes li{
     padding: 10px;
     border-bottom: 1px solid black;
-   
-    
+    color: #5D709A;
+    font-size: 25px;
+}
+
+.quotes .likesCount {
+    font-size: 18px;
+}
+
+.fa-thumbs-up, .fa-trash{
+    font-size: 12px;
+    padding: 2px;
+
 }
 
 form{

@@ -1,7 +1,7 @@
 {
-  "name": "arabic_quotes_api",
+  "name": "random_quotes_api",
   "version": "1.0.0",
-  "description": "Just Some Arabic Quotes With Their English Translation.",
+  "description": "Just Some Quotes.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

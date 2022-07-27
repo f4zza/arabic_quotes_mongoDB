@@ -16,10 +16,11 @@
     <ul class="quotes">
     <% for(let i=0; i < info.length; i++) {%>
         <li class="rapper">
-            <span><%= info[i].arQuote %></span> -
+            <span><%= info[i].arQuote %></span>-
             <span><%= info[i].enQuote %></span>.<br>
             <span class="likesCount"><%= info[i].likes %></span>
             <span class='fa fa-thumbs-up'></span>
+            <span class="fa fa-thumbs-down"></span>
             <span class='fa fa-trash'></span>
         </li>
     <% } %>
